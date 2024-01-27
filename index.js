@@ -12,7 +12,7 @@ app.get("/sample", (req, res) => {
 });
 
 // External API route rendering HTML
-app.get("/external-api", async (req, res) => {
+app.get("/html", async (req, res) => {
     try {
         const response = await axios.get("https://dummy.restapiexample.com/api/v1/employees");
 
