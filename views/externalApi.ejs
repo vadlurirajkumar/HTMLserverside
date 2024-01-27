@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>External API Page</title>
+</head>
+<body>
+    <div class="testCSS">
+        <h1>Employee with ID 2</h1>
+        <% if (employee) { %>
+            <p>ID: <%= employee.id %></p>
+            <p>Name: <%= employee.employee_name %></p>
+            <p>Salary: <%= employee.employee_salary %></p>
+            <p>Age: <%= employee.employee_age %></p>
+        <% } else { %>
+            <p>Employee not found</p>
+        <% } %>
+    </div>
+</body>
+</html>
